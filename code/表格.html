@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    table {
+        margin: 50px auto;
+        
+    }
+
+    table tr {
+        border-spacing: 0;
+        border-collapse: unset;
+    }
+
+    tbody > tr:nth-child(even){
+        background-color: cyan;
+    }
+
+    tbody > tr:nth-child(odd){
+        background-color: burlywood;
+    }
+
+    tbody > tr:hover {
+        background-color: cornflowerblue;
+    }
+    th,td {
+        margin: 0;
+        border: 1px black solid;
+    }
+    
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>列A</th>
+                <th>列B</th>
+                <th>列C</th>
+                <th>列D</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td rowspan="2">C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td colspan="2">C4</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">脚注</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

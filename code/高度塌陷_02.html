@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>开启BFC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            border: aquamarine 5px solid;
+            /* height: 100px; */
+            /* 开启BFC方式1 */
+            /* float: left; */
+
+            /* 开启BFC方式2 */
+
+            /* 开启BFC方式3 */
+            /* display: inline-block; */
+
+            /* 开启BFC方式4 */
+            /* overflow: auto; */
+
+            /* 开启IE6 hasLayout */
+            overflow: hidden;
+            zoom: 1;
+            
+
+        }
+
+        .box2 {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .box3 {
+            background-color: cadetblue;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>开启BFC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            border: aquamarine 5px solid;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .box1::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box3 {
+            background-color: cadetblue;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    <div class="box3"></div>
+</body>
+
+</html>
